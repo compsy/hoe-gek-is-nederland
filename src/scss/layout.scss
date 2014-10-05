@@ -1,0 +1,67 @@
+$main-color: #66B2CC;
+$secondary-color: #1E0733;
+$color-light-black: #252828;
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  filter: alpha(opacity=$opacity * 100); /* For IE8 and earlier */
+}
+
+
+@font-face {
+	font-family: 'bold';
+		src:url('fonts/bold.eot');
+		src:url('fonts/bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/bold.woff') format('woff'),
+			url('fonts/bold.ttf') format('truetype'),
+			url('fonts/bold.svg#bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}   
+ 
+@font-face {
+	font-family: 'medium';
+		src:url('fonts/medium.eot');
+		src:url('fonts/medium.eot?#iefix') format('embedded-opentype'),
+			url('fonts/medium.woff') format('woff'),
+			url('fonts/medium.ttf') format('truetype'),
+			url('fonts/medium.svg#bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html{font-family:"medium", sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0);text-rendering:optimizeLegibility!important;-webkit-font-smoothing:antialiased!important}
+body{font-family:"medium", sans-serif;font-size:16px;line-height:1.4;color:#252828;background-color:#fff;margin:0;transform:translate3d(0,0,0);transform-style:preserve-3d;backface-visibility:hidden}
+
+p {
+	margin: 0px;
+  	line-height: 30px;
+  	font-family: "medium", sans-serif;
+  	text-align: justify;
+  	font-size: 116%;
+  	font-weight: normal;
+  	color: #1C0835;
+  }
+
+h1, h2, h3, h4, h5, h6 {font-family:"bold",sans-serif;}  
+
+h1{font-size:40px;color:$main-color;font-weight:700;line-height:1}
+h2{font-size:22px;color:$secondary-color;font-weight:700}
+h3{font-size:18px;color:$color-light-black;font-weight:700}
+h4{font-size:16px;color:$color-light-black;font-weight:700}
+h5{font-size:14px;color:$color-light-black;font-weight:700}
+h6{font-size:14px;color:$main-color;font-weight:700}
+
+
+
+header {background-color:$main-color;padding:10px;}
+footer {background-color:$main-color;color:white;position:fixed;text-align:center;left:0px;right:0px;bottom:0px;padding:5px 0 5px;}
+footer img{max-height:25px;}
+footer .title{font-weight:700}
+footer .subtitle{font-weight:200}
+#content{padding-bottom:30px;}
+
+.information-button {padding-top:10px;}
+ul.researcher-info > li{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+img.portrait {max-width: 110px;}

@@ -1,0 +1,30 @@
+<markdown ng-include="'content/researchers.md'"></markdown>
+<div class="row">
+  <div class="col-md-6 col-sm-6">
+    <div ng-repeat="researcher in researchers" class="col-md-6 col-sm-6">
+      <div class="well hidden-xs">
+        <ul class="list-unstyled researcher-info">
+          <li class="name"><strong>{{researcher.name}}</strong></li>
+          <li>{{researcher.function}}</li>
+          <li>{{researcher.email}}</li>
+        <li class="information-button"><a href="{{researcher.site}}">Information</a></li>
+        </ul>
+      </div>
+      <div class="well visible-xs">
+        <div class="row">
+          <div class="col-xs-8">
+            <ul class="list-unstyled">
+              <li class="name"><strong>{{researcher.name}}</strong></li>
+              <li>{{researcher.function}}</li>
+              <li>{{researcher.email}}</li>
+              <li class="information-button"><a href="{{researcher.site}}" class="btn btn-default">Information</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <img src="images/team_thumb.jpg">
+  </div>
+</div>

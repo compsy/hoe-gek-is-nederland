@@ -1,5 +1,50 @@
-<html>
-<body>
-HoeGekIsNL Test page
-</body>
+<!DOCYPE html>
+<html ng-app='leefplezier'>
+  <head>
+    <title>Leefplezier</title>
+    <!-- Stylesheets -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/layout.css" rel="stylesheet"/>
+    
+    <!-- Libraries -->
+    <script src="bower_components/angular/angular.js"></script>
+    
+    <!-- Markdown requirements-->
+    <script src="bower_components/showdown/compressed/showdown.js"></script>
+    
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Application-->
+    <script src="src/scripts/app.js"></script>
+    <!-- Controllers -->
+    <script src="src/scripts/controllers/publication_controller.js"></script>
+    <script src="src/scripts/controllers/researcher_controller.js"></script>
+    <script src="src/scripts/controllers/news_controller.js"></script>
+    <script src="src/scripts/controllers/links_controller.js"></script>
+
+    <!-- Services -->
+    <script src="src/scripts/services/markdown.js"></script>
+    
+    <!-- Viewport for responsive design -->
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    
+    <!--Set base for HTML5 navigation-->
+    <!--<base href="/" />-->
+  </head>
+  <body>
+    <div id="content">
+      <div class="container-fluid">
+        <div ng-include src="'views/components/header.html'"></div>
+        <div ng-include src="'views/components/navigation.html'"></div>
+        
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10">
+            <div ng-view></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-include src="'views/components/footer.html'"></div>
+  </body>
 </html>

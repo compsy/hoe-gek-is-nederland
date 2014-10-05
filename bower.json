@@ -1,0 +1,13 @@
+{
+  "name": "HoeGekIsNL",
+  "description": "HoeGekIsNL research page",
+  "version": "0.0.1",
+  "homepage": "umcg.github.io",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "bootstrap": "~3.1.1",
+    "angular-route": "~1.2.x",
+    "showdown": ""
+  }
+}

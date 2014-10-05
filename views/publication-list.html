@@ -1,0 +1,9 @@
+<markdown ng-include="'content/publications.md'"></markdown>
+
+<ul class="publications list-unstyled">
+  <li ng-repeat="publication in publications | filter:{type:'workshop'}">
+    <div class="well">
+      {{publication.authors}} ({{publication.year}}), <em>{{publication.title}}</em>, {{publication.journal}}, <em>{{publication.status}}</em>
+    </div>
+  </li>
+</ul>
