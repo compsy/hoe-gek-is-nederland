@@ -2,7 +2,7 @@
   "name": "HoeGekIsNL",
   "description": "HoeGekIsNL research page",
   "version": "0.0.1",
-  "homepage": "umcg.github.io",
+  "homepage": "umcg.github.io/hoe-gek-is-nederland",
   "private": true,
   "dependencies": {
     "angular": "1.2.x",
